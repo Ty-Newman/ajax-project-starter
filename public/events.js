@@ -5,6 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
         console.log(objRes);
         const imgTag = document.getElementsByClassName('cat-pic');
         imgTag[0].setAttribute('src', objRes.src);
+    }).catch(() => {
+
     })
     document.getElementById('new-pic').addEventListener('click', (event) => {
         document.getElementsByClassName('loader')[0].innerHTML = 'Loading...';
